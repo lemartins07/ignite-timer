@@ -63,6 +63,8 @@ export function CyclesContextProvider({
     if (activeCycle) {
       return differenceInSeconds(new Date(), new Date(activeCycle.starDate))
     }
+
+    return 0
   })
 
   useEffect(() => {
